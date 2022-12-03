@@ -1,4 +1,6 @@
-### Hi there 👋
+### Você está em Gazear! 👋
+
+Faltar às aulas ou às obrigações para ir (...) estudar em outro lugar.
 
 <!--
 **gazear/gazear** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
