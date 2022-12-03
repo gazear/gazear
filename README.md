@@ -1,4 +1,4 @@
-### Você está em Gazear! 👋
+### Repositório do site [Gazear](https://gazear.github.io/)!
 
 Faltar às aulas ou às obrigações para ir (...) estudar em outro lugar.
 
