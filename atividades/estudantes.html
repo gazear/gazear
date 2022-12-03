@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Turmas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    p, h2, button .collapsible {
+      text-align: center;
+    }
+
+    .collapsible {
+      /* background-color: #777; */
+      background-color: lightskyblue;
+      color: blueviolet;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      /* background-color: #555; */
+      background-color: lightcoral;
+    }
+
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      /* background-color: #f1f1f1; */
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Turmas</h2>
+  <p>
+    <a href="./minibio/index.html" target="_blank">Modelo de minibio (Jackson de Jesus).</a>
+  </p>
+  <p>CSM</p>
+  <button class="collapsible">6</button>
+  <div class="content">
+    <p>Alerrandro Gabriel,
+      Alice Laura,
+      Bianca Rafaela,
+      Dallyson Henrique,
+      Edgar Vieira,
+      Ellen Vitoria,
+      Esther Iasmym,
+      Gabryelle Campelo,
+      Geovana Vitoria,
+      Guilherme Januário,
+      Guilherme Tavares,
+      Laura Vitoria,
+      Livia Carolina,
+      Lorena Vitoria,
+      Lorrana Thalita,
+      Luan Ryan,
+      Lucas Gabriel,
+      Maria Clara,
+      Pedro Henrique,
+      Rafael Vinicius,
+      Rebeka Victória,
+      Ruan Soares,
+      Samuel Lima,
+      Sâmya Beatriz,
+      Yasmin Santos,
+      Yasmmin Vitória.</p>
+  </div>
+  <button class="collapsible">7</button>
+  <div class="content">
+    <p>Ana Luiza,
+      Carlos Eduardo,
+      Danilo Gabriel,
+      Darlety Vitoria,
+      Davi Vicente,
+      Edvaldo Cabral,
+      Emanuelen Raquel,
+      Everton Lucas,
+      Felipe Bento,
+      Higor Lucas,
+      Hugo Campelo,
+      Italo Leandro,
+      Izabela Luiza,
+      João Vitor,
+      Júlio Gabriel,
+      Kauan Henry,
+      Lívia Noah,
+      Luamny Naomy,
+      Maria Eduarda,
+      Maria Rosa,
+      Maria Sthephany,
+      Pedro Felipe,
+      Raul Ricardo,
+      Richelli Beatriz,
+      Rikelme Cipriano,
+      Sérgio Italo,
+      Sofia Coutinho,
+      Wanderson Ricardo,
+      Yasmim Vitória.</p>
+  </div>
+  <button class="collapsible">8</button>
+  <div class="content">
+    <p>Ana Beatriz,
+      Clarissa Almeida,
+      Juliana Carla,
+      Lucas Juliano,
+      Luiz Antonio,
+      Maria Clara,
+      Nicolly Milene,
+      Sanderson Vinicius,
+      Victor Gabriel.</p>
+  </div>
+  <button class="collapsible">9</button>
+  <div class="content">
+    <p>Adriano José,
+      Ana Luiza,
+      Arthur Henrique,
+      Clarice França,
+      Daniel Santana,
+      Danielle Albuquerque,
+      Eduardo Lucas,
+      Evellym Bezerra,
+      Helícia Kimberly,
+      João Victor,
+      Kauã Guedes,
+      Leticia Gabrielly,
+      Lucas Gabriel,
+      Luis Fernando,
+      Maria Eduarda,
+      Maria Eduarda,
+      Mariana Lais,
+      Pedro Arthur.</p>
+  </div>
+
+  <hr>
+
+  <p>UR7</p>
+  <button class="collapsible">6</button>
+  <div class="content">
+    <p>Ana Vitória,
+      Anylara Tenório,
+      Davi Guedes,
+      Davi Viana,
+      Dayvid Kawan,
+      Eloysa Maria,
+      Higor Victor,
+      kayky Pimentel,
+      Lorena Isabella,
+      Margarida Helena,
+      Maria Clara,
+      Maria Eduarda,
+      Maria Luiza,
+      Pedro Henrique,
+      Rafael Arruda,
+      Sophia Maria.</p>
+  </div>
+  <button class="collapsible">7</button>
+  <div class="content">
+    <p>Ana Clara,
+      Antonelly Iasmym,
+      Daniel Leite,
+      Guilherme Nascimento,
+      Luiz Miguel,
+      Pedro Joaquim,
+      Vinicius Filipe,
+      Yasmin Luíza.</p>
+  </div>
+  <button class="collapsible">8</button>
+  <div class="content">
+    <p>Analivia Tenório,
+      Arthur Felipe,
+      Beatriz Nascimento,
+      Clara Cecilia,
+      Daniel Leonardo,
+      Isabella da Silva,
+      João Lucas,
+      João Pedro,
+      Lhara Cristinny,
+      Luiz Felipe,
+      Luiza Maria,
+      Talyta Rebeca,
+      Tarcila Mayara,
+      Vitor Costa,
+      <a href="../atividades/minibio/id/ur/8/15.html" target="_blank">Yasmim Felix</a>.
+    </p>
+  </div>
+  <button class="collapsible">9</button>
+  <div class="content">
+    <p>Ana Cecilia,
+      Arthur Felipe,
+      Bruno Leonardo,
+      Daniel Santana,
+      Eduardo da Silva,
+      Mayara Stefany,
+      Nicolly Oliveira.</p>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
